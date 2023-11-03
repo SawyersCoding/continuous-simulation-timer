@@ -17,8 +17,7 @@
 
 #if BUILD_PLATFORM == WINDOWS_BUILD
 #include <windows.h>
-#endif
-#if BUILD_PLATFORM == LINUX_BUILD
+#elif BUILD_PLATFORM == LINUX_BUILD
 #include <unistd.h>
 #define Sleep(milli) usleep(milli)
 #endif
